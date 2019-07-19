@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function tryRomoteFromArray(arr, n) {
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === n) {
+                arr.splice(i,1);
+            }
+        }
+        return arr;
+    }
+
+    let arr1 = [12, 6, 3, 7, 21, 5, 7];
+    let n1 = 2;
+    let result = tryRomoteFromArray(arr1, n1);
+    document.write(result + "<br>");
+    let arr2 = [12, 6, 3, 7, 21, 5, 7];
+    let n2 = 12;
+    let result1 = tryRomoteFromArray(arr2, n2);
+    document.write(result1 + "<br>");
+    let arr3 = [12, 6, 3, 7, 21, 5, 7];
+    let n3 = 7;
+    let result2 = tryRomoteFromArray(arr3, n3);
+    document.write(result2 + "<br>");
+    let arr4 = [12, 6, 3, 4, 21, 5, 7];
+    let n4 = 7;
+    let result3 = tryRomoteFromArray(arr4, n4);
+    document.write(result3 + "<br>");
+
+</script>
+</body>
+</html>
